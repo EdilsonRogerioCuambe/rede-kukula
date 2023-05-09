@@ -31,7 +31,6 @@ const Login = () => {
     };
   };
 
-
   if (loading) {
     return <Loading
       mensagem={'Carregando dados'}
@@ -97,24 +96,24 @@ const Login = () => {
             </div>
 
             <div className="text-sm flex items-center justify-between gap-8 mb-16">
-                <a href="#hg" className="font-medium text-red-600 hover:text-red-500 mb-6 ">
-                  Esqueceu sua senha?
-                </a>
+              <a href="#hg" className="font-medium text-red-600 hover:text-red-500 mb-6 ">
+                Esqueceu sua senha?
+              </a>
             </div>
             <div className="flex items-center justify-center flex-wrap gap-4 mb-4">
-            
+
               <div className="text-sm">
                 <a href="#gfh" className="font-medium text-red-600 hover:text-red-500">
                   Ja se conectou na rede?
                 </a>
               </div>
               <div className="flex items-center">
-              <button
-                    type="button"
-                    class="inline-block rounded-t-lg rounded-b-lg bg-success px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black border  border-2 border-solid border-green-300 flex flex-row gap-2 justify-center items-center">
-                      Acesse
-                      <ArrowRight size={24} weight="light" />
-                    </button>
+                <button
+                  type="button"
+                  class="inline-block rounded-t-lg rounded-b-lg bg-success px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black border  border-2 border-solid border-green-300 flex flex-row gap-2 justify-center items-center">
+                  Acesse
+                  <ArrowRight size={24} weight="light" />
+                </button>
               </div>
             </div>
           </form>
