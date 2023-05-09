@@ -1,0 +1,10 @@
+export { default as Home } from './home/Home';
+export { default as Contacto } from './contacto/Contacto';
+export { default as AddDepoimento } from './addDepoimentos/AddDepoimento';
+export { default as AddNoticia } from './addNoticias/AddNoticia';
+export { default as Depoimentos } from './depoimentos/Depoimentos';
+export { default as Noticias } from './noticias/Noticias';
+export { default as Sobre } from './sobre/Sobre';
+export { default as Noticia } from './noticia/Noticia';
+export { default as AddDoc } from './addDocumentos/AddDoc';
+export { default as Docs } from './docs/Docs';
