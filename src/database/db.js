@@ -52,6 +52,7 @@ const signInWithGoogle = async () => {
       });
       localStorage.setItem("user", JSON.stringify(user));
     }
+    return user;
   } catch (error) {
     console.log(error);
   }
