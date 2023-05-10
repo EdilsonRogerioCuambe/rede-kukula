@@ -14,16 +14,16 @@ const Contacto = () => {
               Para mais informações, por favor contacte-nos através do email:
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              <Link to="mailto:redekukula@gmail.com" className='text-green-600 hover:text-green-900'>
-                redekukula@gmail.com
+              <Link to="mailto:kukulapabhodzi@gmail.com" className='text-green-600 hover:text-green-900'>
+                kukulapabhodzi@gmail.com
               </Link>
             </p>
             <p className="max-w-2xl text-xl text-gray-500 lg:mx-auto">
               ou através do número:
             </p>
             <p>
-              <Link to="tel:+258 84 000 000" className='text-green-600 text-xl mt-4 hover:text-green-900 max-w-2xl lg:mx-auto'>
-                +258 84 000 000
+              <Link to="tel:+258847577797" className='text-green-600 text-xl mt-4 hover:text-green-900 max-w-2xl lg:mx-auto'>
+                +258 (84) 7577797
               </Link>
             </p>
           </div>

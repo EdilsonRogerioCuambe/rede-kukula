@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="">
               <h6
                 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-green-600">
-                REDE KUKULA PABHODZI
+                ASSOCIAÇÃO KUKULA PABHODZI
               </h6>
               <p>
                 A rede de apoio às candidaturas de estudantes de baixa renda a bolsas de estudos.
@@ -85,6 +85,16 @@ const Footer = () => {
                 <Link
                   to={"/contato"}
                   className="text-neutral-600">Contato</Link>
+              </p>
+              <p className="mb-4">
+                <Link
+                  to={"/documentos"}
+                  className="text-neutral-600">Documentos</Link>
+              </p>
+              <p className="mb-4">
+                <Link
+                  to={"/DocumentosporProvincia"}
+                  className="text-neutral-600">Documentos por Província</Link>
               </p>
             </div>
             <div>
