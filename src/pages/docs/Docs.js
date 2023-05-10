@@ -60,7 +60,7 @@ const Docs = () => {
 
   return (
     <>
-      <div class="max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 rounded-sm">
+      <div class="max-w-6xl mx-auto mt-18 px-4 sm:px-6 lg:px-8 rounded-sm">
         <table class="w-full divide-y divide-gray-200 table-fixed ">
           <thead class="bg-gray-700 text-white ">
             <tr>
