@@ -47,7 +47,6 @@ const Login = () => {
 
 <div class="min-h-screen flex items-center justify-center bg-gray-100">
   <div class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
-  <img class="h-16 w-auto mx-auto mb-4" src={imagens.Imagme5} alt="Logo" />
     <div class="text-center">
       <img class="h-16 w-auto mx-auto mb-4" src={imagens.logo} alt="Logo" />
       <h2 class="text-2xl font-extrabold text-gray-900">Faça login na sua conta e conecte-se à rede</h2>
