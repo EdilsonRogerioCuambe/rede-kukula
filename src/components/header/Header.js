@@ -29,10 +29,16 @@ const Header = () => {
   const [active, setActive] = useState('/');
   const [isOpen, setIsOpen] = useState(false); // Add this line
   const [user, setUser] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoaded = () => {
+    setImageLoaded(true);
+  };
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
       if (user) {
+        console.log(user);
         setUser(user);
         setLoading(false);
       } else {
@@ -214,8 +220,10 @@ const Header = () => {
                   <Link to='/perfil'>
                     <img
                       className='border-2 border-green-600 rounded-full h-12 w-12 mx-auto object-contain mr-2'
-                      src={usuario && usuario.photoURL}
-                      alt={usuario && usuario.displayName}
+                      src={usuario ? usuario.photoURL : "https://i.imgur.com/6VBx3io.png"}
+                      alt={usuario ? usuario.displayName : "Usuário"}
+                      onLoad={handleImageLoaded}
+                      style={imageLoaded ? {} : { display: 'none' }}
                     />
                   </Link>
                 </li>
