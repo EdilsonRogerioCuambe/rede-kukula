@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { signInWithGoogle } from '../../database/db';
 import imagens from '../../assets';
@@ -111,7 +111,11 @@ const Login = () => {
                 <button
                   type="button"
                   class="inline-block rounded-t-lg rounded-b-lg bg-success px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black border  border-2 border-solid border-green-300 flex flex-row gap-2 justify-center items-center">
-                  Acesse
+
+            <Link to='/Register'>
+            Acesse
+            </Link>
+                
                   <ArrowRight size={24} weight="light" />
                 </button>
               </div>

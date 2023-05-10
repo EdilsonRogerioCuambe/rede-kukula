@@ -14,6 +14,7 @@ import {
 import { Header } from "./components";
 import DocsProvíncia from "./pages/docs/DocsProvincia";
 import { Login } from "./components";
+import Register from "./pages/registro/Registro";
 
 function MainRoutes() {
   const location = useLocation();
@@ -34,6 +35,7 @@ function MainRoutes() {
         <Route path="/add-doc" element={<AddDoc />} />
         <Route path="/documentos" element={<Docs />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </>
   );
