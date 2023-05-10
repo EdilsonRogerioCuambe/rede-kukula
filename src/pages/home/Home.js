@@ -14,8 +14,6 @@ const Home = () => {
   const navigate = useNavigate();
   const [listaNoticias, setListaNoticias] = useState([]);
 
-  ;
-
   useEffect(() => {
     const fetchNews = async () => {
       const newsCollection = await getDocs(collection(db, 'noticias')); // Pega todas as noticias do banco de dados
