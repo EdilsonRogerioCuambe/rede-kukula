@@ -10,7 +10,7 @@ const Footer = () => {
           className="flex items-center justify-center border-b-2 p-6 lg:justify-between">
           <div className="mr-12 hidden lg:block">
             <span>
-              Se conecte conosco pelas redes sociais:
+              Se conecte conosco pelas redes sociais
             </span>
           </div>
           <div className="flex justify-center">
@@ -178,7 +178,7 @@ const Footer = () => {
         </div>
 
         <div className="bg-neutral-200 p-6 text-center">
-          <span>Desenvolvido por </span>
+          <span>Desenvolvido por: </span>
           <Link
             className="font-semibold text-green-600"
             href="https://github.com/EdilsonRogerioCuambe"
