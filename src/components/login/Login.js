@@ -13,16 +13,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const unsubscribe = () => {
-      if (localStorage.getItem('user')) {
-        navigate('/');
-      } else {
-        navigate('/login');
-      }
-    }
-    return unsubscribe();
-  }, [navigate]);
+  
 
   const handleSubmit = async () => {
     try {
