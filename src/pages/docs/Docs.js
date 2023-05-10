@@ -31,72 +31,64 @@ const Docs = () => {
     fetchData();
   }, []);
 
-  
+
   const handleEyeClick = (doc) => {
     setShowDetails(true);
   };
 
- 
-    const baixarPDF = async (doc) => {
-      const input = document.getElementById('divToPrint');
-      
-      const canvas = await html2canvas(input);
-      const imgData = canvas.toDataURL('image/png');
-      
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, 'JPEG', 0, 0);
-      
-      const blob = pdf.output('blob');
-      const url = URL.createObjectURL(blob);
-      
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = `${doc.nome}.pdf`;
-      link.click();
-      
-      URL.revokeObjectURL(url);
-    };
-  
+
+  const baixarPDF = async (doc) => {
+    const input = document.getElementById('divToPrint');
+
+    const canvas = await html2canvas(input);
+    const imgData = canvas.toDataURL('image/png');
+
+    const pdf = new jsPDF();
+    pdf.addImage(imgData, 'JPEG', 0, 0);
+
+    const blob = pdf.output('blob');
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${doc.nome}.pdf`;
+    link.click();
+
+    URL.revokeObjectURL(url);
+  };
+
 
   return (
     <>
-    
-    <div >
-  <div class="flex flex-col max-width-7xl mt-16 items-center justify-center">
-    <div class="overflow-x-auto lg:-mx-8">
-      <div class="inline-block py-2 sm:px-6 lg:px-8">
-        <div class="overflow-hidden">
-          <table class="w-full text-left text-sm font-light table align-middle mb-0 bg-white p-12 border-red-200 rounded-lg border-3 border-collapse py-16 border-spacing" cellpadding="8">
-            <thead class=" font-extrabold dark:border-neutral-500 bg-light">
-              <tr>
-                <th scope="col" class="px-8 py-4 ">Foto</th>
-                <th scope="col" class="px-6 py-4">Nome</th>
-                <th scope="col" class="px-6 py-4">Numero BI</th>
-                <th scope="col" class="px-6 py-4">Curso</th>
-                <th scope="col" class="px-6 py-4">Província</th>
+
+      <div class="max-w-6xl mx-auto mt-20 px-4 sm:px-6 lg:px-8 rounded-sm">
+        <table class="w-full divide-y divide-gray-200 table-fixed ">
+          <thead class="bg-gray-700 text-white ">
+            <tr>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-medium w-1/4">Foto</th>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-medium w-1/4">Nome</th>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-medium w-1/4">Numero BI</th>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-medium w-1/4">Curso</th>
+              <th scope="col" class="px-6 py-4 text-left text-sm font-medium w-1/4">Província</th>
+            </tr>
+          </thead>
+          {docs.map((doc) => (
+            <tbody class="divide-y divide-gray-200">
+              <tr class="bg-gray-100 rounded-md hover:bg-green-400 transition">
+                <td class="px-6 py-4">
+                  <img src={doc.foto} alt="" class="w-10 h-10 ml-8 rounded-full items-center justify-center flex flex-col" />
+                </td>
+                <td class="px-6 py-4 text-left text-sm font-medium w-1/4">{doc.nome}</td>
+                <td class="px-6 py-4 text-left text-sm font-medium w-1/4">{doc.numeroBI}</td>
+                <td class="px-6 py-4 text-left text-sm font-medium w-1/4">{doc.curso}</td>
+                <td class="px-6 py-4 text-left text-sm font-medium w-1/4">{doc.provincia}</td>
               </tr>
-            </thead>
-            {docs.map((doc) => (
-              <tbody className='mt-12 '>
-                <tr
-                  class=" rounded-lg border-3 transition duration-300 ease-in-out hover:bg-neutral-100 dark:border-blue1 dark:hover:bg-green-300  dark:hover:text-white mt-8">
-                  <td ><img src={doc.foto} alt="" class="w-10 h-10 ml-8 rounded-full items-center justify-center flex flex-col " /></td>
-                  
-                  <td class="whitespace-nowrap px-6 py-4 font-sans font-medium">{doc.nome}</td>
-                  <td class=" font-medium whitespace-nowrap px-6 py-4 font-sans ">{doc.numeroBI}</td>
-                  <td class="whitespace-nowrap px-6 py-4 font-sans font-medium">{doc.curso}</td>
-                  <td class="whitespace-nowrap px-6 py-4 font-sans font-medium">{doc.provincia}</td>
-                  <td className='flex flex-row gap-8 justify-center items-center py-4 font-sans font-mediu'>
-                  </td>
-                </tr>
-              </tbody>
-            ))}
-          </table>
-        </div>
+            </tbody>
+          ))}
+        </table>
       </div>
-    </div>
-  </div>
-</div>
+
+
 
     </>
   )
