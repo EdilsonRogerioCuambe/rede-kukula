@@ -83,9 +83,19 @@ const Header = () => {
               >
                 <li className="relative">
                   <Link
+                    to="/documentos"
                     className="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
                   > <span className="flex-1">
                       Documentos
+                    </span>
+                  </Link>
+                </li>
+                <li className="relative">
+                  <Link
+                    to="/DocumentosporProvincia"
+                    className="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
+                  > <span className="flex-1">
+                      Documentos Por Província
                     </span>
                   </Link>
                 </li>
