@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import imagens from '../../assets';
 
 const Footer = () => {
   return (
     <>
       <footer
-        className="bg-white text-center lg:text-left shadow-md rounded-md">
+        className="bg-white text-center lg:text-left shadow-md rounded-md mt-10">
         <div
           className="flex items-center justify-center border-b-2 p-6 lg:justify-between">
           <div className="mr-12 hidden lg:block">
@@ -153,23 +154,9 @@ const Footer = () => {
               <div className="flex justify-center md:justify-start">
                 <Link href="#!">
                   <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
-                  />
-                </Link>
-                <Link href="#!">
-                  <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
-                  />
-                </Link>
-                <Link href="#!">
-                  <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
+                    className="h-20 w-20 mr-4 object-cover"
+                    src={imagens.parceiro}
+                    alt="Parceiro"
                   />
                 </Link>
               </div>

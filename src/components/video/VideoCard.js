@@ -11,7 +11,7 @@ const VideoCard = ({ videoId, titulo }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
       {titulo && <h3 className="text-xl font-bold p-4">{titulo}</h3>}
       <YouTube videoId={videoId} opts={opts} />
     </div>

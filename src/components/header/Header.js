@@ -147,7 +147,7 @@ const Header = () => {
               </li>
               <li className="flex-1">
                 <Link
-                  to="/add-documento"
+                  to="/add-doc"
                   className='px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer'
                 >
                   <span className="flex-1">
