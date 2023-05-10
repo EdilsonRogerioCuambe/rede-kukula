@@ -13,13 +13,26 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    const unsubscribe = () => {
+      if (localStorage.getItem('user')) {
+        navigate('/');
+      } else {
+        navigate('/login');
+      }
+    }
+    return unsubscribe();
+  }, [navigate]);
+
   const handleSubmit = async () => {
     try {
+      setLoading(true);
       await signInWithGoogle();
       navigate('/');
+      setLoading(false);
     } catch (error) {
       console.log(error);
-      toast.error('Erro ao fazer login', {
+      toast.error(error.message, {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
@@ -28,6 +41,7 @@ const Login = () => {
         pauseOnHover: true,
         progress: undefined
       });
+      setLoading(false);
     };
   };
 
@@ -50,17 +64,15 @@ const Login = () => {
           </div>
           <h2 className=" text-center text-2xl font-extrabold text-gray-900">Faça login na sua conta</h2>
           <form className=" space-y-6 " >
-            <input type="hidden" name="remember" defaultValue="true" />
             <div className="rounded-lg shadow-sm flex flex-col gap-8">
               <div>
-                <label htmlFor="email-address" className="sr-only">
+                <label htmlFor="email-address" className="">
                   Endereço de Email
                 </label>
                 <input
                   id="email-address"
                   name="email"
                   type="email"
-                  autoComplete="email"
                   className="appearance-none rounded-none relative block w-full px-3 py-2  border-2 border-solid border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-lg rounded-b-lg focus:outline-none focus:ring-blue1 focus:border-blue1 focus:z-10 sm:text-sm"
                   placeholder="Endereço de Email"
                   value={email}
@@ -68,14 +80,13 @@ const Login = () => {
                 />
               </div>
               <div>
-                <label htmlFor="password" className="sr-only">
+                <label htmlFor="password" className="">
                   Senha
                 </label>
                 <input
                   id="password"
                   name="password"
                   type="password"
-                  autoComplete="current-password"
                   className="appearance-none rounded-none relative block w-full px-3 py-2 border-2 border-solid border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-lg rounded-b-lg focus:outline-none focus:ring-blue1 focus:border-blue1 focus:z-10 sm:text-sm"
                   placeholder="Senha"
                   value={password}
@@ -109,7 +120,7 @@ const Login = () => {
               </div>
               <div className="flex items-center">
                 <button
-                  type="button"
+                  type="submit"
                   class="inline-block rounded-t-lg rounded-b-lg bg-success px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black border  border-2 border-solid border-green-300 flex flex-row gap-2 justify-center items-center">
                   Acesse
                   <ArrowRight size={24} weight="light" />
