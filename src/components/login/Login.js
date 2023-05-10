@@ -53,7 +53,9 @@ const Login = () => {
     </div>
     <div class="mt-8">
       <div class="mb-4">
-        <button class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-md bg-green-500 hover:bg-green-600 text-white">
+        <button 
+        onClick={handleSubmit}
+        class="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-md bg-green-500 hover:bg-green-600 text-white">
           <GoogleLogo size={24} weight="bold" />
           <span>Entrar com Google</span>
         </button>
