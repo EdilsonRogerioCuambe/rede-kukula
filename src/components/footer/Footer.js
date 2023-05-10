@@ -83,7 +83,7 @@ const Footer = () => {
               <p className="mb-4">
                 <Link
                   to={"/contato"}
-                  className="text-neutral-600">Contacto</Link>
+                  className="text-neutral-600">Contato</Link>
               </p>
             </div>
             <div>
@@ -143,6 +143,36 @@ const Footer = () => {
                 </svg>
                 (85) 996173899
               </p>
+            </div>
+
+            <div className="">
+              <h6
+                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                Parceiros
+              </h6>
+              <div className="flex justify-center md:justify-start">
+                <Link href="#!">
+                  <img
+                    className="h-16 w-16 mr-4"
+                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
+                    alt="Tuple"
+                  />
+                </Link>
+                <Link href="#!">
+                  <img
+                    className="h-16 w-16 mr-4"
+                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
+                    alt="Mirage"
+                  />
+                </Link>
+                <Link href="#!">
+                  <img
+                    className="h-16 w-16 mr-4"
+                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
+                    alt="StaticKit"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
