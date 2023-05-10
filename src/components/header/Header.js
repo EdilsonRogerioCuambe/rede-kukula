@@ -10,7 +10,7 @@ import {
 import { Loading } from '../../components';
 import { SignOut } from 'phosphor-react';
 import "./Header.css";
-import { useMediaQuery } from 'react-responsive';
+
 
 
 const Header = () => {
