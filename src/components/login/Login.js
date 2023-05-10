@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { signInWithGoogle } from '../../database/db';
 import imagens from '../../assets';
 import { Loading } from '../../components';
-import { ArrowRight, GoogleLogo } from 'phosphor-react';
+import { ArrowRight, FacebookLogo, GoogleLogo } from 'phosphor-react';
 
 const Login = () => {
 
@@ -45,6 +45,8 @@ const Login = () => {
   return (
     <>
       <div className="min-h-screen rounded-t-md flex items-center justify-center bg-white py-12 px-4 sm:px-6 lg:px-8 rounded-lg">
+        
+
         <div className="max-w-sm w-full space-y-8 flex flex-col">
           <div>
             <img
@@ -53,16 +55,26 @@ const Login = () => {
               alt="Rede Kukula"
             />
           </div>
-          <h2 className=" text-center text-2xl font-extrabold text-gray-900">Faça login na sua conta</h2>
+          <h2 className=" text-center text-2xl font-extrabold text-gray-900">Faça login na sua conta e conecte-se a rede</h2>
           <form className=" space-y-6 " >
             <div>
               <button
                 onClick={handleSubmit}
                 type="submit"
-                className="group relative gap-2  w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 "
+                className="group relative gap-2  w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 "
               >
                 Entrar com Google
                 <GoogleLogo size={24} weight="bold" />
+              </button>
+            </div>
+            <div>
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="group relative gap-2  w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 "
+              >
+                Entrar com Facebook
+                <FacebookLogo size={24} weight="bold" />
               </button>
             </div>
 
