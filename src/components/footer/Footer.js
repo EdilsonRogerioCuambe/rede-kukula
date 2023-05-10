@@ -178,7 +178,7 @@ const Footer = () => {
         </div>
 
         <div className="bg-neutral-200 p-6 text-center">
-          <span>Desenvolvido por: </span>
+          <span>Desenvolvido por </span>
           <Link
             className="font-semibold text-green-600"
             href="https://github.com/EdilsonRogerioCuambe"
