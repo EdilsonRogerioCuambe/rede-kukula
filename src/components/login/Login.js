@@ -55,37 +55,6 @@ const Login = () => {
           </div>
           <h2 className=" text-center text-2xl font-extrabold text-gray-900">Faça login na sua conta</h2>
           <form className=" space-y-6 " >
-            <div className="rounded-lg shadow-sm flex flex-col gap-8">
-              <div>
-                <label htmlFor="email-address" className="">
-                  Endereço de Email
-                </label>
-                <input
-                  id="email-address"
-                  name="email"
-                  type="email"
-                  className="appearance-none rounded-none relative block w-full px-3 py-2  border-2 border-solid border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-lg rounded-b-lg focus:outline-none focus:ring-blue1 focus:border-blue1 focus:z-10 sm:text-sm"
-                  placeholder="Endereço de Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div>
-                <label htmlFor="password" className="">
-                  Senha
-                </label>
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  className="appearance-none rounded-none relative block w-full px-3 py-2 border-2 border-solid border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-lg rounded-b-lg focus:outline-none focus:ring-blue1 focus:border-blue1 focus:z-10 sm:text-sm"
-                  placeholder="Senha"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-            </div>
-
             <div>
               <button
                 onClick={handleSubmit}
@@ -97,31 +66,6 @@ const Login = () => {
               </button>
             </div>
 
-            <div className="text-sm flex items-center justify-between gap-8 mb-16">
-              <a href="#hg" className="font-medium text-red-600 hover:text-red-500 mb-6 ">
-                Esqueceu sua senha?
-              </a>
-            </div>
-            <div className="flex items-center justify-center flex-wrap gap-4 mb-4">
-
-              <div className="text-sm">
-                <a href="#gfh" className="font-medium text-red-600 hover:text-red-500">
-                  Ja se conectou na rede?
-                </a>
-              </div>
-              <div className="flex items-center">
-                <button
-                  type="submit"
-                  class="inline-block rounded-t-lg rounded-b-lg bg-success px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black border  border-2 border-solid border-green-300 flex flex-row gap-2 justify-center items-center">
-
-            <Link to='/Register'>
-            Acesse
-            </Link>
-                
-                  <ArrowRight size={24} weight="light" />
-                </button>
-              </div>
-            </div>
           </form>
         </div>
       </div>
