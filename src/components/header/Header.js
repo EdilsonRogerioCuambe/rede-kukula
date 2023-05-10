@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <>
       <div className="px-5 pt-5 max-w-9xl mx-auto">
-        <div className="py-3 px-5 bg-white rounded shadow-xl">
+        <div className="py-3 px-5 bg-white rounded shadow-md">
           <div className="-mx-1">
             <button
               className="lg:hidden flex items-center justify-between w-full px-2 py-2 text-sm font-medium leading-5 text-left text-gray-700 bg-white rounded-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-gray"
@@ -62,9 +62,8 @@ const Header = () => {
             </button>
 
             <ul
-              className={`${
-                isOpen ? "block" : "hidden"
-              } lg:flex lg:items-center lg:justify-between w-full`}
+              className={`${isOpen ? "block" : "hidden"
+                } lg:flex lg:items-center lg:justify-between w-full`}
             >
 
               <li className="flex-1">
@@ -157,33 +156,27 @@ const Header = () => {
                         text={user.displayName}
                         icon="mdi mdi-account-circle-outline"
                       >
-                        <li className="relative">
+                        <li className="relative flex flex-row">
                           <img
                             src={user.photoURL}
                             alt={user.displayName}
-                            className="h-12 object-cover w-full"
+                            className="h-12 object-cover rounded-md"
                             onLoad={handleImageLoaded}
                             style={{ display: imageLoaded ? "block" : "none" }}
                           />
-                          <div className="absolute top-0 left-0 w-3 h-3 bg-white border transform rotate-45 -mt-1 ml-6"></div>
-                          <div className="bg-white rounded w-full relative z-10 py-1">
-                            <ul className="list-reset">
-                              <li className="relative">
-                                <button
-                                  className="px-4 py-2 flex w-full items-start hover:bg-gray-100 no-underline hover:no-underline transition-colors duration-100 cursor-pointer"
-                                  onClick={() => {
-                                    logout();
-                                    navigate('/');
-                                  }}
-                                >
-                                  <span className="flex-1">
-                                    <SignOut size={24} />
-                                    Sair
-                                  </span>
-                                </button>
-                              </li>
-                            </ul>
-                          </div>
+                          <button
+                            className="justify-center items-center flex w-full py-2 text-sm font-medium leading-5 text-left text-gray-700 bg-white rounded-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-gray"
+                            onClick={() => {
+                              logout();
+                              navigate('/');
+                            }}
+                          >
+                            <span className="flex-row flex">
+                              <SignOut size={24} /> <span
+                                className='px-5'
+                              >Sair</span>
+                            </span>
+                          </button>
                         </li>
                       </Dropdown>
                     </ul>
