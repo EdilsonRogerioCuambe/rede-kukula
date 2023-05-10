@@ -1,5 +1,6 @@
 import React from 'react';
 import imagens from '../../assets';
+import { Footer } from '../../components';
 
 const Sobre = () => {
 
@@ -83,8 +84,9 @@ const Sobre = () => {
           A Rede Kukula tem ajudado diversos estudantes a realizarem o sonho de estudar no exterior e alcançar seus objetivos profissionais. Se você deseja saber mais sobre a nossa organização ou como podemos ajudá-lo(a) a se inscrever em uma bolsa de estudos, visite o nosso website ou entre em contato conosco.
         </div>
       </div>
+      <Footer />
     </>
   )
 }
 
-export default Sobre
+export default Sobre;

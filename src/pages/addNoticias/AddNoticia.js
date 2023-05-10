@@ -157,10 +157,10 @@ const AddNoticia = () => {
   return (
     <>
       <div className='max-w-7xl py-20 mx-auto px-4 sm:px-6 lg:px-8'>
-        <div className="mx-auto text-center my-8">
+        <div className="mx-auto text-center my-2">
           <h1 className="text-4xl font-bold text-green-900">Adicionar Notícia</h1>
         </div>
-        <div className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col my-2">
+        <div className="bg-white shadow-md rounded px-8 pb-8 mb-4 flex flex-col my-2">
           {
             preview ? (
               <img
