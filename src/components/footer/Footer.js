@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import imagens from '../../assets';
 
 const Footer = () => {
   return (
     <>
       <footer
-        className="bg-white text-center lg:text-left shadow-md rounded-md">
+        className="bg-white text-center lg:text-left shadow-md rounded-md mt-10">
         <div
           className="flex items-center justify-center border-b-2 p-6 lg:justify-between">
           <div className="mr-12 hidden lg:block">
@@ -63,7 +64,7 @@ const Footer = () => {
             <div className="">
               <h6
                 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start text-green-600">
-                REDE KUKULA PABHODZI
+                ASSOCIAÇÃO KUKULA PABHODZI
               </h6>
               <p>
                 A rede de apoio às candidaturas de estudantes de baixa renda a bolsas de estudos.
@@ -84,6 +85,16 @@ const Footer = () => {
                 <Link
                   to={"/contato"}
                   className="text-neutral-600">Contato</Link>
+              </p>
+              <p className="mb-4">
+                <Link
+                  to={"/documentos"}
+                  className="text-neutral-600">Documentos</Link>
+              </p>
+              <p className="mb-4">
+                <Link
+                  to={"/DocumentosporProvincia"}
+                  className="text-neutral-600">Documentos por Província</Link>
               </p>
             </div>
             <div>
@@ -153,23 +164,9 @@ const Footer = () => {
               <div className="flex justify-center md:justify-start">
                 <Link href="#!">
                   <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
-                  />
-                </Link>
-                <Link href="#!">
-                  <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
-                  />
-                </Link>
-                <Link href="#!">
-                  <img
-                    className="h-16 w-16 mr-4"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
+                    className="h-20 w-20 mr-4 object-cover"
+                    src={imagens.parceiro}
+                    alt="Parceiro"
                   />
                 </Link>
               </div>

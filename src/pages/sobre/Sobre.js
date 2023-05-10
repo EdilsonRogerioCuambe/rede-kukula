@@ -10,10 +10,10 @@ const Sobre = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-green-900 sm:text-4xl">
-              Rede Kukula
+              Associação Kukula Pabhodzi
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              A Rede Kukula é uma organização sem fins lucrativos que tem como objetivo ajudar estudantes moçambicanos em condições necessitadas a concorrer a bolsas de estudos no exterior.
+              A Associação Kukula Pabhodzi é uma organização sem fins lucrativos que tem como objetivo ajudar estudantes moçambicanos a concorrer a bolsas de estudos no exterior.
             </p>
           </div>
 
@@ -58,11 +58,11 @@ const Sobre = () => {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl font-bold text-green-900 mb-6">Sobre a Rede Kukula</h1>
+        <h1 className="text-4xl font-bold text-green-900 mb-6">Sobre a Associação Kukula Pabhodzi</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <p className="text-lg text-gray-700 mb-4">
-              A Rede Kukula é uma organização sem fins lucrativos que tem como objetivo principal ajudar estudantes moçambicanos em condições necessitadas a concorrer a bolsas de estudos no exterior. Acreditamos que a educação é um dos principais pilares para o desenvolvimento de um país e, por isso, trabalhamos para proporcionar oportunidades de estudo para aqueles que não têm condições financeiras para arcar com os custos de uma educação de qualidade.
+              A Associação Kukula Pabhodzi (Crescer Juntos) é uma organização sem fins lucrativos que tem como objetivo principal ajudar estudantes moçambicanos em condições necessitadas a concorrer a bolsas de estudos no exterior. Acreditamos que a educação é um dos principais pilares para o desenvolvimento de um país e, por isso, trabalhamos para proporcionar oportunidades de estudo para aqueles que não têm condições financeiras para arcar com os custos de uma educação de qualidade.
             </p>
             <p className="text-lg text-gray-700 mb-4">
               Oferecemos diversos serviços para os estudantes que desejam concorrer a bolsas de estudos no exterior. Entre eles estão:
@@ -81,7 +81,7 @@ const Sobre = () => {
           Além disso, trabalhamos em parceria com diversas universidades e instituições de ensino no exterior para facilitar o acesso dos estudantes moçambicanos a programas de bolsas de estudos. Buscamos sempre oportunidades que não só forneçam bolsas, mas que também tenham um impacto significativo na vida dos estudantes e na sociedade moçambicana como um todo.
         </div>
         <div className="text-lg text-gray-700 mb-4">
-          A Rede Kukula tem ajudado diversos estudantes a realizarem o sonho de estudar no exterior e alcançar seus objetivos profissionais. Se você deseja saber mais sobre a nossa organização ou como podemos ajudá-lo(a) a se inscrever em uma bolsa de estudos, visite o nosso website ou entre em contato conosco.
+          A Associação Kukula Pabhodzi tem ajudado diversos estudantes a realizarem o sonho de estudar no exterior e alcançar seus objetivos profissionais. Se você deseja saber mais sobre a nossa organização ou como podemos ajudá-lo(a) a se inscrever em uma bolsa de estudos, visite o nosso website ou entre em contato conosco.
         </div>
       </div>
       <Footer />
