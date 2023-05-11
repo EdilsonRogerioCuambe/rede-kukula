@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import imagens from '../../assets';
+import { imagens } from '../../assets';
 import {
   auth,
   db,
-  storage, 
+  storage,
 } from '../../database/db';
 import { Card, VideoCard, Footer } from '../../components';
 import { getDocs, collection, } from 'firebase/firestore';
 import { getDownloadURL, ref } from 'firebase/storage';
+import { videos } from '../../assets';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -64,10 +65,8 @@ const Home = () => {
         </div>
         <h2 className="text-2xl font-bold text-green-900 mt-8">Depoimentos</h2>
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-8 mt-8 sm:justify-center">
-          <VideoCard videoId="iIigKQbAjY0" titulo="Depoimento 1" />
-          <VideoCard videoId="6HANDcOTpds" titulo="Depoimento 2" />
-          <VideoCard videoId="W5Ex9Ecm-R0" titulo="Depoimento 3" />
-          <VideoCard videoId="Kb85dxtkFFU" titulo="Depoimento 4" />
+          <VideoCard titulo="Depoimento 1" src={videos.damasco} />
+          <VideoCard titulo="Depoimento 2" src={videos.isia} />
         </div>
       </div>
       <Footer />
