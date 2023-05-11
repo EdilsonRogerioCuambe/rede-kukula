@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { signInWithGoogle } from '../../database/db';
 import { imagens } from '../../assets';
 import { Loading } from '../../components';
-import { ArrowRight, FacebookLogo, GoogleLogo } from 'phosphor-react';
+import { FacebookLogo, GoogleLogo } from 'phosphor-react';
 
 const Login = () => {
 
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
 
 

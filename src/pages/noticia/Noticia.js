@@ -86,7 +86,7 @@ const Noticia = () => {
           <img
             src={noticia.imagem}
             alt={noticia.titulo}
-            className="w-full h-48 object-cover"
+            className="w-full object-cover h-92"
           />
           <div className="p-4">
             <h2 className="text-xl font-bold">{noticia.titulo}</h2>
