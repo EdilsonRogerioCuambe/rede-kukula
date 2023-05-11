@@ -47,7 +47,7 @@ const Header = () => {
   return (
     <>
       <div className="px-5 pt-5 max-w-9xl mx-auto">
-        <div className="py-3 px-5 bg-white rounded shadow-md">
+        <div className="py-3 px-5 rounded shadow-md">
           <div className="-mx-1">
             <button
               className="lg:hidden flex items-center justify-between w-full px-2 py-2 text-sm font-medium leading-5 text-left text-gray-700 bg-white rounded-lg hover:text-gray-500 focus:outline-none focus:shadow-outline-gray"
