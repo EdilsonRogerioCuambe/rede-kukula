@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import imagens from '../../assets';
+import {imagens} from '../../assets';
 import Dropdown from './Dropdown';
 import {
   auth,

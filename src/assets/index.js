@@ -8,7 +8,10 @@ import Imagme5 from './images/pexels-fauxels-3182812.jpg'
 import banner from './images/banner.png';
 import parceiro from './images/parceiro.jpg';
 
-const imagens = {
+import damasco from './video/damasco.mp4';
+import isia from './video/isia.mp4';
+
+export const imagens = {
     logo,
     estudante,
     imagem1,
@@ -20,4 +23,7 @@ const imagens = {
     parceiro,
 }
 
-export default imagens;
+export const videos = {
+    damasco,
+    isia,
+}

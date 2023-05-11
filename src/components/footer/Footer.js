@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import imagens from '../../assets';
+import { imagens } from '../../assets';
 
 const Footer = () => {
   return (
